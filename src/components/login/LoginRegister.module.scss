@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.loginRegisterForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 4rem;
+    >input {
+        font-size: 1rem;
+        padding: 0.7rem 1rem;
+        outline: none;
+        border: none;
+        border-radius: 0.3rem;
+    }
+    >button {
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        border: none;
+        border-radius: 0.3rem;
+    }  
+}
+.loginRegisterHere{
+    display: flex;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    >p{
+        font-style: italic;
+        font-size: 0.9rem;
+    }
+    >button {
+        border: none;
+        text-decoration: underline;
+        color: blue;
+        background-color: #a2d2ff;
+        cursor: pointer;
+    }
+    
+}
+
+.modalCloseButton {
+    position: absolute;
+    border: 1px solid grey;
+    padding: 0.5rem;
+    border-radius: 10%;
+    background-color: white;
+    top: 0.5rem;
+    right: 0.5rem;
+    cursor: pointer;
+}
+
+@media (min-width: 576px) {
+    .loginRegisterForm {
+        >input {
+            width: 30rem;
+        }
+    }
+}

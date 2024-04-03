@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+    >h2 {
+        font-family: cursive;
+        cursor: pointer;
+    }
+    >form {
+        order: 1;
+        display: flex;
+        gap: 0.5rem;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid grey;
+        padding: 0.5rem 1rem;
+        border-radius: 0.3rem;
+        width: 100%;
+        >input {
+            font-size: 1.1rem;
+            border: none;
+            outline: none;
+            width: 90%;
+        }
+        .searchIcon {
+            cursor: pointer;
+        }
+    }
+
+    .loginButton {
+        color: black;
+        font-size: 1.2rem;
+        text-decoration: none;
+        background-color: white;
+        border: 1px solid grey;
+        padding: 0.5rem 1rem;
+        border-radius: 0.3rem;
+        transition: all 0.5s ease;
+        cursor: pointer;
+        &:hover {
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+        }
+    }
+}
+
+@media (min-width: 702px) {
+    .navbar {
+        >form {
+            width: 72%;
+            order: 0;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        padding: 1rem 2rem;
+        >form {
+            width: 70%;
+        }
+    }
+}

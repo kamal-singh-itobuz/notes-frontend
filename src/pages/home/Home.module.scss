@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.homeContainer {
+    padding: 1rem;
+    .tasksCategorySection {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .tasksCategories {
+            display: flex;
+            overflow-x: scroll;
+            gap: 1rem;
+            .activeCategory {
+                background-color: black;
+                color: white;
+            }
+            >p {
+                border: 1px solid black;
+                padding: 0.5rem 1rem;
+                border-radius: 4rem;
+                cursor: pointer;
+            }
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+        .buttons {
+            display: flex;
+            gap: 1rem;
+            >button {
+                border: 1px solid white;
+                padding: 0.5rem 1rem;
+                color: white;
+                border-radius: 0.5rem;
+                cursor: pointer;
+                font-weight: 700;
+                &:nth-child(1) {
+                    background-color: #386641;
+                }
+                &:nth-child(2) {
+                    background-color: #780000;
+                }
+                &:nth-child(3) {
+                    background-color: #fca311;
+                }
+            }
+        }
+    }
+    .tasksContainer{
+        margin-top: 2rem;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 576px) {
+    .homeContainer {
+        padding: 2rem;
+        .tasksCategorySection {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}

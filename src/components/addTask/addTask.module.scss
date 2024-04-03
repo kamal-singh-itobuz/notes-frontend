@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.modalCloseButton {
+    position: absolute;
+    border: 1px solid grey;
+    padding: 0.5rem;
+    border-radius: 10%;
+    background-color: white;
+    top: 0.5rem;
+    right: 0.5rem;
+    cursor: pointer;
+}
+.addTaskForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 3rem 0rem;
+    width: 16rem;
+    >input, >textarea {
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 1.1rem;
+        outline: none;
+        border: none;
+        border-radius: 0.3rem;
+    }
+    >button {
+        background-color: #22577a;
+        border: 1px solid white;
+        padding: 0.5rem 1rem;
+        color: white;
+        border-radius: 0.5rem;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 576px) {
+    .addTaskForm {
+        width: 30rem;
+    }
+}
