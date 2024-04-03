@@ -140,6 +140,7 @@ async function registerUser(name, email, phone, password) {
             SweetAlertError("All Fields Are Mandatory!");
             return 0;
         }
+        return 1;
     }
     catch {
         console.log('Error');
